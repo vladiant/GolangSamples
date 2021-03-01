@@ -15,7 +15,8 @@ Based on [Beginners Guide to gRPC in Go!](https://www.youtube.com/watch?v=BdzYdN
 5. `go get google.golang.org/protobuf/cmd/protoc-gen-go google.golang.org/grpc/cmd/protoc-gen-go-grpc`
 6. `go install google.golang.org/grpc/cmd/protoc-gen-go-grpc`
 7. Prepare files `server.go` , `chat.proto` and `chat` folder.
-8. `protoc --go_out=./chat --go_opt=paths=source_relative --go-grpc_out=./chat --go-grpc_opt=paths=source_relative chat.proto`
-9. Prepare `chat.go`
-10. `go mod init chat` to create local module. Replaced `go mod init github.com/tutorialedge/go-grpc-tutorial/chat` from tutorial.
-11. Prepare `client.go`
+8. `go get -u github.com/golang/protobuf/protoc-gen-go`
+9. `protoc --go_out=./chat --go_opt=paths=source_relative --go-grpc_out=./chat --go-grpc_opt=paths=source_relative chat.proto`
+10. Prepare `chat.go`
+11. `go mod init chat` to create local module. Replaced `go mod init github.com/tutorialedge/go-grpc-tutorial/chat` from tutorial.
+12. Prepare `client.go`
